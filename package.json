@@ -7,7 +7,8 @@
     "dev": "node src/app.ts",
     "dev2": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
     "prod": "node dist/app.js",
-    "build": "tsc"
+    "build": "echo 'no build on server'",
+    "build:local": "tsc && cp ./package.json ./dist/"
   },
   "author": "",
   "license": "ISC",
