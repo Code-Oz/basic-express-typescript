@@ -27,3 +27,11 @@ npm run build
 ```
 npm run prod
 ```
+
+## Deploy dockerfile
+
+```
+docker build . -t toto
+
+docker run -itd -p 3001:3001 toto
+```
